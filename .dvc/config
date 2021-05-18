@@ -1,0 +1,4 @@
+[core]
+    remote = my_stroage
+['remote "my_stroage"']
+    url = /tmp/dvc-test
