@@ -1,0 +1,10 @@
+stages:
+  split:
+    cmd: python src/split.py data/train.csv
+    deps:
+    - data/train.csv
+    - src/split.py
+    params:
+    - split.ratio
+    outs:
+    - data/prepared

@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  split:
+    cmd: python src/split.py data/train.csv
+    deps:
+    - path: data/train.csv
+      md5: 6a6ead592133e5aadfba2fb86b89e778
+      size: 38364157
+    - path: src/split.py
+      md5: 491c45f1119fde1f63546bdd92e59a64
+      size: 817
+    params:
+      params.yaml:
+        split.ratio: 0.2
+    outs:
+    - path: data/prepared
+      md5: c9a7bea9c3528deb789b27672b884d5c.dir
+      size: 15368318
+      nfiles: 2
