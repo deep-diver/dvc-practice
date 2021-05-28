@@ -1,2 +1,6 @@
 split:
   ratio: 0.20
+train:
+  epochs: 1
+  batch_size: 16
+  min_lr: 0.00001
